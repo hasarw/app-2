@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Angular Resume Builder</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+</head>
+
+<body id="page-top">
+
+<app-header></app-header>
+
+<app-banner [formData]="formData"></app-banner>
+
+  <app-about
+  [formData]="formData"
+  [skills]="skills"
+  [getRandomNumber]="getRandomNumber">
+</app-about>
+
+<app-education [formData]="formData"></app-education>
+
+
+<app-experiences [formData]="formData"></app-experiences>
+
+
+<app-contact [formData]="formData" ></app-contact>
+
+
+</body>
+</html>
+
+
+
+

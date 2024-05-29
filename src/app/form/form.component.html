@@ -1,0 +1,102 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <h2>Enter your information</h2>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+      <div class="form-group">
+        <label for="name">Full name:</label>
+        <input type="text" formControlName="name" id="name" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="headline">Headline:</label>
+        <input type="text" formControlName="headline" id="headline" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="linkedin">LinkedIn Link:</label>
+        <input type="text" formControlName="linkedin" id="linkedin" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="about">About:</label>
+        <textarea id="about" formControlName="about" class="form-control"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" formControlName="email" id="email" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" formControlName="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id="phone" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <input type="text" formControlName="address" id="address" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="language">Language:</label>
+        <input type="text" formControlName="lang" id="language" class="form-control">
+      </div>
+
+      <div class="form-group" >
+        <label for="skills">Professional Skills:</label>
+        <p><i>seperate by comma ','</i></p>
+        <input type="text" formControlName="skills" id="skills" class="form-control">
+      </div>
+
+      <fieldset>
+      <h4>Professional Experiences</h4>
+      <h4>1.</h4>
+      <div class="form-group">
+        <input type="text" class="form-control" formControlName="jobtitle1" placeholder="Job Title">
+        <input type="text" class="form-control" formControlName="org1" placeholder="Organazation">
+        <input type="date" class="form-control" formControlName="orgDate1" placeholder="Due Date">
+        <textarea id="details1" class="form-control" formControlName="orgDetails1" placeholder="Job Description"></textarea>
+      </div>
+      <h4>2.</h4>
+      <div class="form-group">
+        <input type="text" class="form-control" formControlName="jobtitle2" placeholder="Job Title">
+        <input type="text" class="form-control" formControlName="org2" placeholder="Organazation">
+        <input type="date" class="form-control" formControlName="orgDate2" placeholder="Due Date">
+        <textarea id="details2" class="form-control" formControlName="orgDetails2" placeholder="Job Description"></textarea>
+      </div>
+
+      </fieldset>
+
+      <fieldset>
+      <h4>Education</h4>
+
+      <div class="form-group">
+        <input type="text" id="school1" formControlName="school1" class="form-control" placeholder="School">
+        <input type="text" id="degree1" formControlName="degree1" class="form-control" placeholder="Degree">
+        <input type="date" id="grad-date1" formControlName="gradDate1" class="form-control" placeholder="Graduation Year">
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="school2" formControlName="school2" class="form-control" placeholder="School">
+        <input type="text" id="degree2" formControlName="degree2" class="form-control" placeholder="Degree">
+        <input type="date" id="grad-date2" formControlName="gradDate2" class="form-control" placeholder="Graduation Year">
+      </div>
+
+      <div class="list">
+
+      </div>
+
+      </fieldset>
+
+      <div class="form-group">
+        <button type="submit" class="button button-a button-big button-rouded" style="width: 100%;">Submit all data</button>
+      </div>
+    </form>
+
+    </div>
+  </div>
+</div>
+
+
