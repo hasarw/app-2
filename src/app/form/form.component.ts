@@ -41,7 +41,6 @@ export class FormComponent implements OnInit {
         school2: ['Asian Institute of Technology'],
         degree2: ['Master'],
         gradDate2: ['2023-05-01']
-        // Add more form controls as needed
       });
 
    }

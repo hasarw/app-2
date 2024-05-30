@@ -9,7 +9,7 @@ import { DataService } from '../data.service';
 export class ViewComponent implements OnInit {
   formData: any;
 
-  skills: string[] = []; // Initialize as an empty array
+  skills: string[] = [];
   skill: string = '';
   randomNumber: number = 0;
 
@@ -20,7 +20,7 @@ export class ViewComponent implements OnInit {
   ngOnInit(): void {
     this.dataService.currentFormData.subscribe(data => {
       this.formData = data;
-      this.getSkills(); // Call getSkills when formData is updated
+      this.getSkills();
     });
   }
 

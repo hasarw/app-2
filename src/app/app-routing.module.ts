@@ -15,7 +15,7 @@ const routes: Routes = [
 
 const routerOptions: ExtraOptions = {
   anchorScrolling: 'enabled',
-  scrollOffset: [0, 64] // Optional: adjust scroll offset
+  scrollOffset: [0, 64]
 };
 
 
